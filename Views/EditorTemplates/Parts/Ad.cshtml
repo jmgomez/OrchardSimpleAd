@@ -1,0 +1,21 @@
+﻿@model jmgomez.CustomAds.Models.AdPart
+<fieldset>
+  <legend>Ad Fields</legend> 
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Url)
+</div>
+<div class="editor-field">
+    @Html.TextBoxFor(model => model.Url)
+    @Html.ValidationMessageFor(model => model.Url)
+</div>   
+
+<div class="editor-label">
+   @Html.LabelFor(model=>model.Active)
+</div>    
+<div class="editor-field">
+    @Html.CheckBoxFor(model=>model.Active)
+    @T("If you activate this box, this will be the current ad")        
+</div>
+  
+</fieldset>
